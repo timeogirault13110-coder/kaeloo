@@ -8,6 +8,8 @@ import CartDrawer from './components/CartDrawer';
 import Home from './pages/Home';
 import Collection from './pages/Collection';
 import ProductDetail from './pages/ProductDetail';
+import Policy from './pages/Policy';
+import TermsGate from './components/TermsGate';
 
 function App() {
   return (
@@ -20,11 +22,13 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/collections/:slug" element={<Collection />} />
               <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path="/policies/:slug" element={<Policy />} />
               <Route path="*" element={<Home />} />
             </Routes>
           </main>
           <Footer />
           <CartDrawer />
+          <TermsGate />
         </CartProvider>
       </BrowserRouter>
     </div>

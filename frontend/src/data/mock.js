@@ -3,7 +3,7 @@
 export const bundles = [
   {
     id: 'premium-box-supplier',
-    title: 'PREMIUM BOX - SUPPLIER',
+    title: 'PREMIUM BOX',
     price: 16.33,
     regularPrice: 58.51,
     image: 'https://resellparadise.eu/cdn/shop/files/premium-box-supplier-7780055.png?v=1788703786&width=800',
@@ -13,7 +13,7 @@ export const bundles = [
   },
   {
     id: 'starter-bundle',
-    title: 'STARTER BUNDLE - SUPPLIER',
+    title: 'STARTER BUNDLE',
     price: 20.43,
     regularPrice: 152.16,
     image: 'https://resellparadise.eu/cdn/shop/files/starter-bundle-supplier-4372390.png?v=1788703754&width=800',
@@ -23,7 +23,7 @@ export const bundles = [
   },
   {
     id: 'horse-bundle-supplier',
-    title: 'HORSE BUNDLE - SUPPLIER',
+    title: 'HORSE BUNDLE',
     price: 13.45,
     regularPrice: 37.44,
     image: 'https://resellparadise.eu/cdn/shop/files/horse-bundle-supplier-9539812.png?v=1788703783&width=800',
@@ -33,7 +33,7 @@ export const bundles = [
   },
   {
     id: 'starter-box-supplier',
-    title: 'STARTER BOX - SUPPLIER',
+    title: 'STARTER BOX',
     price: 15.16,
     regularPrice: 46.81,
     image: 'https://resellparadise.eu/cdn/shop/files/starter-box-supplier-8515992.png?v=1788703787&width=800',
@@ -43,7 +43,7 @@ export const bundles = [
   },
   {
     id: 'the-ultimate-fragrance-bundle',
-    title: 'STARTER FRAGRANCE BUNDLE - SUPPLIER',
+    title: 'STARTER FRAGRANCE BUNDLE',
     price: 19.26,
     regularPrice: 112.36,
     image: 'https://resellparadise.eu/cdn/shop/files/the-ultimate-fragrance-bundle-1854225.jpg?v=1788703761&width=800',
@@ -53,7 +53,7 @@ export const bundles = [
   },
   {
     id: 'essential-bundle',
-    title: 'ESSENTIAL BUNDLE - SUPPLIER',
+    title: 'ESSENTIAL BUNDLE',
     price: 17.50,
     regularPrice: 116.99,
     image: 'https://resellparadise.eu/cdn/shop/files/essential-bundle-3021199.jpg?v=1788703759&width=800',
@@ -63,7 +63,7 @@ export const bundles = [
   },
   {
     id: 'summer-bundle-supplier',
-    title: 'SUMMER BUNDLE - SUPPLIER',
+    title: 'SUMMER BUNDLE',
     price: 18.08,
     regularPrice: 61.98,
     image: 'https://resellparadise.eu/cdn/shop/files/summer_bundle.jpg?v=1788703797&width=800',
@@ -87,7 +87,7 @@ export const bestSellers = [
   },
   {
     id: 'premium-box-supplier',
-    title: 'PREMIUM BOX - SUPPLIER',
+    title: 'PREMIUM BOX',
     price: 16.33,
     regularPrice: 58.51,
     image: 'https://resellparadise.eu/cdn/shop/files/premium-box-supplier-7780055.png?v=1788703786&width=800',
@@ -96,7 +96,7 @@ export const bestSellers = [
   },
   {
     id: 'valentine-in-roma',
-    title: 'VALENTINE IN ROMA - SUPPLIER',
+    title: 'VALENTINE IN ROMA',
     price: 9.94,
     regularPrice: 23.35,
     image: 'https://resellparadise.eu/cdn/shop/files/valentine-in-roma-6040196.jpg?v=1788703755&width=800',
@@ -106,7 +106,7 @@ export const bestSellers = [
   },
   {
     id: 'starter-bundle',
-    title: 'STARTER BUNDLE - SUPPLIER',
+    title: 'STARTER BUNDLE',
     price: 20.43,
     regularPrice: 152.16,
     image: 'https://resellparadise.eu/cdn/shop/files/starter-bundle-supplier-4372390.png?v=1788703754&width=800',
@@ -115,7 +115,7 @@ export const bestSellers = [
   },
   {
     id: 'pods-2-pro-copy',
-    title: '2 PRO - SUPPLIER',
+    title: '2 PRO',
     price: 13.99,
     regularPrice: 30.42,
     image: 'https://resellparadise.eu/cdn/shop/files/pods-2-pro-4460665.png?v=1788703763&width=800',
@@ -125,7 +125,7 @@ export const bestSellers = [
   },
   {
     id: 'rl-sweater',
-    title: 'HORSE KNIT SWEATER - SUPPLIER',
+    title: 'HORSE KNIT SWEATER',
     price: 10.52,
     regularPrice: 31.55,
     image: 'https://resellparadise.eu/cdn/shop/files/horse-knit-sweater-supplier-6938709.png?v=1788703766&width=800',
@@ -136,7 +136,7 @@ export const bestSellers = [
   },
   {
     id: 'horse-bundle-supplier',
-    title: 'HORSE BUNDLE - SUPPLIER',
+    title: 'HORSE BUNDLE',
     price: 13.45,
     regularPrice: 37.44,
     image: 'https://resellparadise.eu/cdn/shop/files/horse-bundle-supplier-9539812.png?v=1788703783&width=800',
@@ -145,7 +145,7 @@ export const bestSellers = [
   },
   {
     id: 'starter-box-supplier',
-    title: 'STARTER BOX - SUPPLIER',
+    title: 'STARTER BOX',
     price: 15.16,
     regularPrice: 46.81,
     image: 'https://resellparadise.eu/cdn/shop/files/starter-box-supplier-8515992.png?v=1788703787&width=800',
@@ -154,7 +154,7 @@ export const bestSellers = [
   },
   {
     id: 'phone-16-pro-copy',
-    title: 'PHONE 16 PRO - SUPPLIER',
+    title: 'PHONE 16 PRO',
     price: 15.21,
     regularPrice: 117.04,
     image: 'https://resellparadise.eu/cdn/shop/files/phone-16-pro-supplier-9520030.png?v=1788703765&width=800',
@@ -165,7 +165,7 @@ export const bestSellers = [
   },
   {
     id: 'jeans-goltir-fragrance',
-    title: 'JEANS GOLTIR FRAGRANCE - SUPPLIER',
+    title: 'JEANS GOLTIR FRAGRANCE',
     price: 11.06,
     regularPrice: 23.35,
     image: 'https://resellparadise.eu/cdn/shop/files/jeans-goltir-fragrance-5641905.jpg?v=1788703756&width=800',
@@ -176,7 +176,7 @@ export const bestSellers = [
   },
   {
     id: 'goya-cardholder',
-    title: 'GOYA CARDHOLDER - SUPPLIER',
+    title: 'GOYA CARDHOLDER',
     price: 8.18,
     regularPrice: 15.21,
     image: 'https://resellparadise.eu/cdn/shop/files/goya-cardholder-6055047.jpg?v=1788703749&width=800',
@@ -186,7 +186,7 @@ export const bestSellers = [
   },
   {
     id: 'milers-tracksuit-supplier',
-    title: 'MILERS TRACKSUIT - SUPPLIER',
+    title: 'MILERS TRACKSUIT',
     price: 13.99,
     regularPrice: 25.69,
     image: 'https://resellparadise.eu/cdn/shop/files/NIKE_MILERS.png?v=1788703800&width=800',
@@ -197,7 +197,7 @@ export const bestSellers = [
   },
   {
     id: 'the-ultimate-fragrance-bundle',
-    title: 'STARTER FRAGRANCE BUNDLE - SUPPLIER',
+    title: 'STARTER FRAGRANCE BUNDLE',
     price: 19.26,
     regularPrice: 112.36,
     image: 'https://resellparadise.eu/cdn/shop/files/the-ultimate-fragrance-bundle-1854225.jpg?v=1788703761&width=800',
@@ -206,7 +206,7 @@ export const bestSellers = [
   },
   {
     id: 'punk-hoodie',
-    title: 'PUNK HOODIE - SUPPLIER',
+    title: 'PUNK HOODIE',
     price: 11.69,
     regularPrice: 30.42,
     image: 'https://resellparadise.eu/cdn/shop/files/punk-hoodie-supplier-7590621.png?v=1788703754&width=800',
@@ -217,7 +217,7 @@ export const bestSellers = [
   },
   {
     id: 'bb-zip-up',
-    title: 'BB ZIP UP - SUPPLIER',
+    title: 'BB ZIP UP',
     price: 11.69,
     regularPrice: 30.43,
     image: 'https://resellparadise.eu/cdn/shop/files/bb-zip-up-supplier-2054800.jpg?v=1788703745&width=800',
@@ -228,7 +228,7 @@ export const bestSellers = [
   },
   {
     id: 'crocodile-bracelet',
-    title: 'CROCODILE BRACELET - SUPPLIER',
+    title: 'CROCODILE BRACELET',
     price: 8.18,
     regularPrice: 17.55,
     image: 'https://resellparadise.eu/cdn/shop/files/lcste-bracelet-6980530.png?v=1788703743&width=800',
@@ -239,7 +239,7 @@ export const bestSellers = [
   },
   {
     id: 'million',
-    title: '! MILLION - SUPPLIER',
+    title: '! MILLION',
     price: 9.31,
     regularPrice: 23.35,
     image: 'https://resellparadise.eu/cdn/shop/files/million-2881936.jpg?v=1788703760&width=800',
@@ -249,7 +249,7 @@ export const bestSellers = [
   },
   {
     id: 'aventus-supplier',
-    title: 'AVENTUS - SUPPLIER',
+    title: 'AVENTUS',
     price: 11.65,
     regularPrice: 21.01,
     image: 'https://resellparadise.eu/cdn/shop/files/5057D3E4-4362-492D-BC93-EC2F6B85C5F1.png?v=1788796434&width=800',
@@ -259,7 +259,7 @@ export const bestSellers = [
   },
   {
     id: 'dor-b30',
-    title: 'B DOR 30 - SUPPLIER',
+    title: 'B DOR 30',
     price: 11.06,
     regularPrice: 29.25,
     image: 'https://resellparadise.eu/cdn/shop/files/b-dor-30-supplier-6706128.jpg?v=1788703781&width=800',
