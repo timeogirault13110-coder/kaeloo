@@ -24,9 +24,7 @@ const content = {
     shipping: {
       title: 'Delivery',
       body: [
-        'Orders are processed within 24-48h.',
-        'Standard delivery: 5-10 business days.',
-        'A tracking number is sent by email as soon as your order ships.',
+        'Delivery is digital.',
       ],
     },
     refund: {
@@ -59,9 +57,7 @@ const content = {
     shipping: {
       title: 'Livraison',
       body: [
-        'Les commandes sont préparées sous 24 à 48h.',
-        'Livraison standard : 5 à 10 jours ouvrés.',
-        'Un numéro de suivi est envoyé par email dès l\'expédition.',
+        'La livraison est digitale.',
       ],
     },
     refund: {
