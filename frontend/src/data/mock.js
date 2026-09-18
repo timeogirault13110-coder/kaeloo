@@ -9,7 +9,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/premium-box-supplier-7780055.png?v=1788703786&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'The Premium Box gathers the best of our supplier catalog: exclusive fragrances, must-have accessories and top streetwear pieces. Perfect kickstart for any reseller.'
+    description: 'The Premium Box gathers exclusive fragrances, must-have accessories and top streetwear pieces in one iconic set.'
   },
   {
     id: 'starter-bundle',
@@ -19,7 +19,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/starter-bundle-supplier-4372390.png?v=1788703754&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'Everything a beginner needs to start their reselling journey. Save more than 85% on the total value.'
+    description: 'Everything you need to build a starter wardrobe. Save more than 85% on the total value.'
   },
   {
     id: 'horse-bundle-supplier',
@@ -29,7 +29,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/horse-bundle-supplier-9539812.png?v=1788703783&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'A curated selection of premium polo-inspired pieces at unbeatable supplier prices.'
+    description: 'A curated selection of premium polo-inspired pieces at unbeatable prices.'
   },
   {
     id: 'starter-box-supplier',
@@ -39,7 +39,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/starter-box-supplier-8515992.png?v=1788703787&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'The essential Starter Box, perfect for those who want a taste of the reselling world.'
+    description: 'The essential Starter Box: everyday essentials in a beautifully packaged set.'
   },
   {
     id: 'the-ultimate-fragrance-bundle',
@@ -49,7 +49,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/the-ultimate-fragrance-bundle-1854225.jpg?v=1788703761&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'A selection of the most iconic fragrances at supplier price. Ideal for reselling on any platform.'
+    description: 'A selection of the most iconic fragrances, presented in one stunning bundle.'
   },
   {
     id: 'essential-bundle',
@@ -59,7 +59,7 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/essential-bundle-3021199.jpg?v=1788703759&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'The essential pieces every reseller needs to stock up on.'
+    description: 'The essential pieces every wardrobe needs.'
   },
   {
     id: 'summer-bundle-supplier',
@@ -69,21 +69,21 @@ export const bundles = [
     image: 'https://resellparadise.eu/cdn/shop/files/summer_bundle.jpg?v=1788703797&width=800',
     onSale: true,
     category: 'bundles',
-    description: 'Trending summer items ready to boost your sales during the hot months.'
+    description: 'Trending summer essentials, curated for the hot months.'
   }
 ];
 
 export const bestSellers = [
   {
-    id: 'the-complete-reselling-course',
-    title: 'COMPLETE RESELLING GUIDE',
+    id: 'the-premium-style-guide',
+    title: 'PREMIUM STYLE GUIDE',
     price: 9.89,
     regularPrice: 25.74,
-    image: 'https://resellparadise.eu/cdn/shop/files/the-complete-reselling-course-4688334.jpg?v=1788703763&width=800',
-    hoverImage: 'https://resellparadise.eu/cdn/shop/files/the-complete-reselling-course-3937260.jpg?v=1788703762&width=800',
+    image: 'https://resellparadise.eu/cdn/shop/files/the-premium-style-guide-4688334.jpg?v=1788703763&width=800',
+    hoverImage: 'https://resellparadise.eu/cdn/shop/files/the-premium-style-guide-3937260.jpg?v=1788703762&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'The complete guide to start and scale your reselling business. From sourcing to shipping.'
+    description: 'A premium style guide to help you level up your look and get the most out of your NovaShop pieces.'
   },
   {
     id: 'premium-box-supplier',
@@ -102,7 +102,7 @@ export const bestSellers = [
     image: 'https://resellparadise.eu/cdn/shop/files/valentine-in-roma-6040196.jpg?v=1788703755&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Iconic fragrance with romantic notes. High-demand item.'
+    description: 'Iconic fragrance with romantic notes.'
   },
   {
     id: 'starter-bundle',
@@ -121,7 +121,7 @@ export const bestSellers = [
     image: 'https://resellparadise.eu/cdn/shop/files/pods-2-pro-4460665.png?v=1788703763&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Wireless audio pods at supplier price. Top-selling tech accessory.'
+    description: 'Wireless audio pods with premium sound. Our top-selling tech accessory.'
   },
   {
     id: 'rl-sweater',
@@ -161,7 +161,7 @@ export const bestSellers = [
     hoverImage: 'https://resellparadise.eu/cdn/shop/files/phone-16-pro-5250306.jpg?v=1788703764&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Latest flagship smartphone at supplier price. Extremely high margin.'
+    description: 'Latest flagship smartphone with premium finishing.'
   },
   {
     id: 'jeans-goltir-fragrance',
@@ -172,7 +172,7 @@ export const bestSellers = [
     hoverImage: 'https://resellparadise.eu/cdn/shop/files/jeans-goltir-fragrance-2930590.png?v=1788703756&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Denim-inspired fragrance. A cult favorite among resellers.'
+    description: 'Denim-inspired fragrance. A cult favorite.'
   },
   {
     id: 'goya-cardholder',
@@ -213,7 +213,7 @@ export const bestSellers = [
     hoverImage: 'https://resellparadise.eu/cdn/shop/files/punk-hoodie-2196447.png?v=1788703754&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Streetwear hoodie with spider graphic. High reselling potential.'
+    description: 'Streetwear hoodie with signature spider graphic. A statement piece.'
   },
   {
     id: 'bb-zip-up',
@@ -245,7 +245,7 @@ export const bestSellers = [
     image: 'https://resellparadise.eu/cdn/shop/files/million-2881936.jpg?v=1788703760&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Gold-bar shaped luxury fragrance. Extremely popular.'
+    description: 'Gold-bar shaped luxury fragrance. A modern classic.'
   },
   {
     id: 'aventus-supplier',
@@ -255,7 +255,7 @@ export const bestSellers = [
     image: 'https://resellparadise.eu/cdn/shop/files/5057D3E4-4362-492D-BC93-EC2F6B85C5F1.png?v=1788796434&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Legendary fragrance loved by resellers worldwide.'
+    description: 'Legendary fragrance loved worldwide.'
   },
   {
     id: 'dor-b30',
@@ -265,7 +265,7 @@ export const bestSellers = [
     image: 'https://resellparadise.eu/cdn/shop/files/b-dor-30-supplier-6706128.jpg?v=1788703781&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'Designer sneaker at supplier price. High-margin item.'
+    description: 'Designer sneaker with premium leather finish.'
   }
 ];
 

@@ -101,3 +101,120 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+user_problem_statement: |
+  Clone of resellparadise.eu rebranded to NovaShop. Added:
+  - Terms of Use acceptance popup (simplified, only asks to accept)
+  - Policy pages (terms/privacy/shipping/refund) mentioning 100% digital delivery
+  - Removed "- SUPPLIER" from all product names
+  - Multi-language FR/EN with switcher
+  - Customer star reviews on cards + full reviews section on product page
+  - JWT-based customer accounts with digital library
+  - Stripe Checkout integration (BYOK, LIVE key from user)
+
+backend:
+  - task: "Auth register/login/me endpoints"
+    implemented: true
+    working: true
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Implemented POST /api/auth/register, POST /api/auth/login, GET /api/auth/me with JWT (30 days), bcrypt for password hashing."
+      - working: true
+        agent: "testing"
+        comment: "✅ All auth endpoints tested and working correctly. POST /api/auth/register creates user with bcrypt hash and returns JWT token. Duplicate email correctly rejected with 400. POST /api/auth/login validates credentials and returns token. Wrong password correctly rejected with 401. GET /api/auth/me returns user data with valid token and correctly rejects requests without token (401)."
+
+  - task: "Stripe Checkout (Flow B - BYOK)"
+    implemented: true
+    working: true
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "POST /api/payments/checkout uses emergentintegrations StripeCheckout. Server-side price computation from PRODUCT_CATALOG. Order persisted before redirect. GET /api/payments/status/{session_id} polls Stripe as webhook fallback. Webhook at /api/webhook/stripe. Using LIVE Stripe key from user."
+      - working: true
+        agent: "testing"
+        comment: "✅ Stripe checkout endpoints tested and working correctly. POST /api/payments/checkout creates Stripe session (LIVE mode) and returns checkout_url and session_id. Order persisted to DB with status='initiated', payment_status='pending', amount=16.33. Unknown product correctly rejected with 400. Empty cart correctly rejected with 400. GET /api/payments/status/{session_id} returns correct order data. Nonexistent session correctly returns 404. ⚠️ LIVE MODE CONFIRMED - real Stripe key in use."
+
+  - task: "Digital library endpoint"
+    implemented: true
+    working: true
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "GET /api/library returns purchased digital products (from paid orders) for the authenticated user."
+      - working: true
+        agent: "testing"
+        comment: "✅ Library endpoint tested and working correctly. GET /api/library requires authentication (401 without token). Returns empty items array for new user with no paid orders. Endpoint structure correct and ready for paid order fulfillment."
+
+frontend:
+  - task: "Auth pages, Account page, PaymentResult pages"
+    implemented: true
+    working: "NA"
+    file: "frontend/src/pages/*"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Will be tested by user or on demand only. Not yet automated."
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 2
+  run_ui: false
+
+test_plan:
+  current_focus: []
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+  - agent: "main"
+    message: |
+      Please test the backend endpoints. Important notes:
+      1) Use REACT_APP_BACKEND_URL from frontend/.env as base URL (external), not localhost.
+      2) Stripe is in LIVE mode with the user's real key. For the checkout endpoint, please:
+         - Test that /api/payments/checkout returns a checkout_url and session_id for a valid cart.
+         - DO NOT actually complete payments (would charge real money). Just verify the session is created.
+         - Verify the order is written to MongoDB with status="initiated", payment_status="pending".
+      3) Verify /api/payments/status/{session_id} returns the pending order info.
+      4) Test full auth flow: register a random email, login, /auth/me with the token.
+      5) Test /api/library requires auth and returns empty items for a new user.
+  - agent: "testing"
+    message: |
+      ✅ Backend testing complete - ALL ENDPOINTS WORKING
+      
+      Tested 14 scenarios across all backend endpoints:
+      
+      1. Root health check (GET /api/) - ✅ Working
+      2. Auth register - ✅ Working (creates user, returns JWT)
+      3. Auth register duplicate - ✅ Working (correctly rejects with 400)
+      4. Auth login - ✅ Working (validates credentials, returns JWT)
+      5. Auth login wrong password - ✅ Working (correctly rejects with 401)
+      6. Auth /me with token - ✅ Working (returns user data)
+      7. Auth /me without token - ✅ Working (correctly rejects with 401)
+      8. Library without token - ✅ Working (correctly rejects with 401)
+      9. Library with token - ✅ Working (returns empty items for new user)
+      10. Stripe checkout valid cart - ✅ Working (creates session, persists order)
+      11. Stripe checkout unknown product - ✅ Working (correctly rejects with 400)
+      12. Stripe checkout empty cart - ✅ Working (correctly rejects with 400)
+      13. Payment status valid session - ✅ Working (returns order with status=initiated, payment_status=pending, amount=16.33)
+      14. Payment status nonexistent - ✅ Working (correctly returns 404)
+      
+      ⚠️ CONFIRMED: Stripe is in LIVE mode with real API key. Checkout sessions are created successfully but NO payments were completed during testing.
+      
+      All backend functionality is working as expected. No issues found.

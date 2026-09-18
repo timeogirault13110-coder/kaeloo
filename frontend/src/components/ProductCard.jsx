@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
+import { useI18n } from '../context/I18nContext';
+import { getRatingStats } from '../data/reviews';
+import Stars from './Stars';
 
 const ProductCard = ({ product }) => {
   const { addItem } = useCart();
+  const { t } = useI18n();
   const [hovered, setHovered] = useState(false);
   const [added, setAdded] = useState(false);
 
@@ -11,6 +15,7 @@ const ProductCard = ({ product }) => {
     ((product.regularPrice - product.price) / product.regularPrice) * 100
   );
 
+  const { average, count } = getRatingStats(product.id);
   const displayImage = hovered && product.hoverImage ? product.hoverImage : product.image;
 
   const handleAdd = (e) => {
@@ -46,7 +51,7 @@ const ProductCard = ({ product }) => {
           onClick={handleAdd}
           className="absolute bottom-3 right-3 bg-white text-black text-[11px] uppercase tracking-wider font-medium px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black hover:text-white shadow-sm"
         >
-          {added ? 'Added ✓' : 'Add'}
+          {added ? t('product.added') : t('product.add')}
         </button>
       </Link>
 
@@ -57,6 +62,12 @@ const ProductCard = ({ product }) => {
         >
           {product.title}
         </Link>
+
+        <div className="mt-1.5 flex items-center gap-2">
+          <Stars value={average} size={12} />
+          <span className="text-[11px] text-neutral-500">({count})</span>
+        </div>
+
         <div className="mt-1.5 flex items-baseline gap-2">
           <span className="text-[13px] text-red-600 font-semibold">${product.price.toFixed(2)}</span>
           <span className="text-[12px] text-neutral-400 line-through">${product.regularPrice.toFixed(2)}</span>
