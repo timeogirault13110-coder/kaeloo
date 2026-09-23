@@ -361,17 +361,28 @@ const Orders = ({ API, authHeader }) => {
 const UsersTab = ({ API, authHeader, me }) => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
+import React, { useState, useEffect, useCallback } from 'react'; // Assure-toi que useCallback est importé
 
-  const load = async () => {
+// ... (le reste de ton code avant)
+
+  const load = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`${API}/admin/users`, { headers: authHeader() });
+      const res = await axios.get(${API}/admin/users, { headers: authHeader() });
       setItems(res.data.items || []);
-    } finally { setLoading(false); }
-  };
-  useEffect(() => { load(); /* eslint-disable-next-line */ }, []);
+    } finally { 
+      setLoading(false); 
+    }
+  }, []);
+
+  useEffect(() => {
+    load();
+  }, [load]);
 
   const promote = async (id) => {
+    await axios.post(${API}/admin/users/${id}/promote, {}, { headers: authHeader() });
+    load();
+  };
     await axios.post(`${API}/admin/users/${id}/promote`, {}, { headers: authHeader() });
     load();
   };
