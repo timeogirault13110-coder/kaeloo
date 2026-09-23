@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const I18nContext = createContext(null);
-const STORAGE_KEY = 'novashop_lang_v1';
+const STORAGE_KEY = 'kaeloo_lang_v1';
 
 const translations = {
   en: {
@@ -24,7 +24,7 @@ const translations = {
     'hero.eyebrow': 'New drop',
     'hero.title1': 'Iconic pieces.',
     'hero.title2': 'Everyday prices.',
-    'hero.desc': 'NovaShop curates premium bundles and best-selling items you\'ll love.',
+    'hero.desc': 'Kaeloo curates premium bundles and best-selling items you\'ll love.',
     'hero.shopBundles': 'Shop Bundles',
     'hero.shopAll': 'Shop All',
     'hero.featured': 'Featured',
@@ -93,7 +93,7 @@ const translations = {
     'hero.eyebrow': 'Nouveauté',
     'hero.title1': 'Pièces iconiques.',
     'hero.title2': 'Prix imbattables.',
-    'hero.desc': 'NovaShop sélectionne les packs et best-sellers que tu vas adorer.',
+    'hero.desc': 'Kaeloo sélectionne les packs et best-sellers que tu vas adorer.',
     'hero.shopBundles': 'Voir les packs',
     'hero.shopAll': 'Tout voir',
     'hero.featured': 'À la une',

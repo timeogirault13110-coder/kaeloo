@@ -15,7 +15,7 @@ const Account = () => {
   const T = {
     en: {
       welcome: 'Welcome back',
-      subtitle: 'Your NovaShop account',
+      subtitle: 'Your Kaeloo account',
       logout: 'Sign out',
       library: 'My orders',
       libraryDesc: 'All your past orders.',
@@ -26,7 +26,7 @@ const Account = () => {
     },
     fr: {
       welcome: 'Bon retour',
-      subtitle: 'Ton compte NovaShop',
+      subtitle: 'Ton compte Kaeloo',
       logout: 'Déconnexion',
       library: 'Mes commandes',
       libraryDesc: 'Toutes tes commandes passées.',

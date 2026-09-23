@@ -100,7 +100,7 @@ const ProductDetail = () => {
           </div>
 
           <p className="mt-5 text-sm text-neutral-600 leading-relaxed">
-            {product.description || 'A curated product from NovaShop.'}
+            {product.description || 'A curated product from Kaeloo.'}
           </p>
 
           {/* Quantity + Add */}
@@ -144,7 +144,7 @@ const ProductDetail = () => {
           {/* Accordions */}
           <div className="mt-10">
             <Acc id="desc" title={t('product.description')}>
-              {product.description || 'A curated product from NovaShop.'}
+              {product.description || 'A curated product from Kaeloo.'}
             </Acc>
           </div>
         </div>

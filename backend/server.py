@@ -31,7 +31,7 @@ JWT_EXPIRE_DAYS = int(os.environ.get('JWT_EXPIRE_DAYS', '30'))
 STRIPE_API_KEY = os.environ.get('STRIPE_API_KEY', '')
 ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', '').lower().strip()
 
-app = FastAPI(title="NovaShop API")
+app = FastAPI(title="Kaeloo API")
 api_router = APIRouter(prefix="/api")
 auth_scheme = HTTPBearer(auto_error=False)
 
@@ -199,7 +199,7 @@ async def apply_promo(code: str, subtotal: float):
 # ---------------- Routes ----------------
 @api_router.get("/")
 async def root():
-    return {"message": "NovaShop API"}
+    return {"message": "Kaeloo API"}
 
 # --- Auth (email/password) ---
 @api_router.post('/auth/register', response_model=AuthOut)

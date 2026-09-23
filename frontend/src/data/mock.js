@@ -1,4 +1,4 @@
-// Mock product data for NovaShop (cloned structure from resellparadise)
+// Mock product data for Kaeloo (cloned structure from resellparadise)
 
 export const bundles = [
   {
@@ -83,7 +83,7 @@ export const bestSellers = [
     hoverImage: 'https://resellparadise.eu/cdn/shop/files/the-premium-style-guide-3937260.jpg?v=1788703762&width=800',
     onSale: true,
     category: 'best-sellers',
-    description: 'A premium style guide to help you level up your look and get the most out of your NovaShop pieces.'
+    description: 'A premium style guide to help you level up your look and get the most out of your Kaeloo pieces.'
   },
   {
     id: 'premium-box-supplier',

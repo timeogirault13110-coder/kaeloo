@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useI18n } from '../context/I18nContext';
 
-const STORAGE_KEY = 'novashop_terms_accepted_v1';
+const STORAGE_KEY = 'kaeloo_terms_accepted_v1';
 
 const TermsGate = () => {
   const [visible, setVisible] = useState(false);
@@ -33,7 +33,7 @@ const TermsGate = () => {
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
       <div className="relative bg-white w-full max-w-md shadow-2xl">
         <div className="px-6 py-8 text-center">
-          <p className="text-[11px] uppercase tracking-[0.3em] text-neutral-500 mb-2">NovaShop</p>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-neutral-500 mb-2">Kaeloo</p>
           <h2 className="text-xl font-black uppercase tracking-tight" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>
             {t('gate.title')}
           </h2>

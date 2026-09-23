@@ -1,4 +1,4 @@
-// Reviews mock data for NovaShop products
+// Reviews mock data for Kaeloo products
 // Each entry: productId -> [{ id, name, rating, date, title, body, verified }]
 
 const commonReviews = [

@@ -7,10 +7,10 @@ const content = {
     terms: {
       title: 'Terms of Use',
       body: [
-        'By using NovaShop you agree to these terms.',
+        'By using Kaeloo you agree to these terms.',
         'You must be at least 18 years old to purchase.',
         'All sales are final once the order has been shipped.',
-        'For any question contact support@novashop.com.',
+        'For any question contact support@kaeloo.com.',
       ],
     },
     privacy: {
@@ -18,7 +18,7 @@ const content = {
       body: [
         'We collect only the information needed to process your order (name, email, shipping and billing address).',
         'Your data is never sold to third parties.',
-        'You can request deletion of your data at support@novashop.com.',
+        'You can request deletion of your data at support@kaeloo.com.',
       ],
     },
     shipping: {
@@ -40,10 +40,10 @@ const content = {
     terms: {
       title: "Conditions d'utilisation",
       body: [
-        "En utilisant NovaShop, vous acceptez ces conditions.",
+        "En utilisant Kaeloo, vous acceptez ces conditions.",
         "Vous devez avoir au moins 18 ans pour acheter.",
         "Toutes les ventes sont définitives une fois la commande expédiée.",
-        "Pour toute question, contactez support@novashop.com.",
+        "Pour toute question, contactez support@kaeloo.com.",
       ],
     },
     privacy: {
@@ -51,7 +51,7 @@ const content = {
       body: [
         "Nous ne collectons que les informations nécessaires à la commande (nom, email, adresse de livraison et de facturation).",
         "Vos données ne sont jamais revendues.",
-        "Vous pouvez demander la suppression de vos données à support@novashop.com.",
+        "Vous pouvez demander la suppression de vos données à support@kaeloo.com.",
       ],
     },
     shipping: {

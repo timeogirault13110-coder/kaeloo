@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 
 const CartContext = createContext(null);
 
-const STORAGE_KEY = 'novashop_cart_v1';
+const STORAGE_KEY = 'kaeloo_cart_v1';
 
 export const CartProvider = ({ children }) => {
   const [items, setItems] = useState([]);

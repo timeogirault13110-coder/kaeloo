@@ -53,7 +53,7 @@ const Header = () => {
 
           <Link to="/" className="absolute left-1/2 -translate-x-1/2 select-none">
             <span className="font-black tracking-[0.28em] text-xl lg:text-2xl" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>
-              NOVASHOP
+              KAELOO
             </span>
           </Link>
 
@@ -160,7 +160,7 @@ const Header = () => {
       {mobileOpen && (
         <div className="fixed inset-0 z-50 bg-white lg:hidden">
           <div className="flex items-center justify-between px-4 h-16 border-b border-neutral-200">
-            <span className="font-black tracking-[0.28em] text-xl" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>NOVASHOP</span>
+            <span className="font-black tracking-[0.28em] text-xl" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>KAELOO</span>
             <button onClick={() => setMobileOpen(false)} aria-label="Close"><X className="w-5 h-5" /></button>
           </div>
           <nav className="flex flex-col p-6 gap-5 text-lg font-medium uppercase tracking-wider">

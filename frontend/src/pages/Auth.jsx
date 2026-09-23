@@ -81,7 +81,7 @@ const Auth = ({ mode }) => {
   return (
     <div className="max-w-md mx-auto px-4 lg:px-8 py-16">
       <div className="text-center mb-8">
-        <p className="text-xs uppercase tracking-[0.3em] text-neutral-500">NovaShop</p>
+        <p className="text-xs uppercase tracking-[0.3em] text-neutral-500">Kaeloo</p>
         <h1 className="mt-2 text-3xl lg:text-4xl font-black uppercase tracking-tight" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>
           {isLogin ? T.loginTitle : T.registerTitle}
         </h1>

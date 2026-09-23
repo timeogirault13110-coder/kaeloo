@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="max-w-[1400px] mx-auto px-4 lg:px-8 py-14 grid grid-cols-2 md:grid-cols-4 gap-8">
         <div className="col-span-2 md:col-span-1">
           <span className="font-black tracking-[0.28em] text-xl" style={{ fontFamily: 'Archivo Black, Inter, sans-serif' }}>
-            NOVASHOP
+            KAELOO
           </span>
           <p className="text-xs text-neutral-500 mt-3 leading-relaxed">
             {t('footer.tagline')}
@@ -44,14 +44,14 @@ const Footer = () => {
         <div>
           <p className="text-xs uppercase tracking-widest font-semibold mb-3">{t('footer.newsletter')}</p>
           <p className="text-xs text-neutral-600 mb-3">{t('footer.newsletterDesc')}</p>
-          <form onSubmit={(e) => { e.preventDefault(); alert('Thanks for subscribing to NovaShop!'); }} className="flex">
+          <form onSubmit={(e) => { e.preventDefault(); alert('Thanks for subscribing to Kaeloo!'); }} className="flex">
             <input type="email" required placeholder={t('footer.emailPh')} className="flex-1 px-3 py-2 border border-neutral-300 text-xs outline-none focus:border-black" />
             <button className="bg-black text-white px-4 text-[11px] uppercase tracking-widest hover:bg-neutral-800 transition-colors">{t('footer.join')}</button>
           </form>
         </div>
       </div>
       <div className="border-t border-neutral-200 py-5 text-center text-[11px] text-neutral-500">
-        © {new Date().getFullYear()} NovaShop · {t('footer.rights')}
+        © {new Date().getFullYear()} Kaeloo · {t('footer.rights')}
       </div>
     </footer>
   );

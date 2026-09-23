@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState, useCallback } fr
 import axios from 'axios';
 
 const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
-const STORAGE_TOKEN = 'novashop_token_v1';
+const STORAGE_TOKEN = 'kaeloo_token_v1';
 
 const AuthContext = createContext(null);
 
