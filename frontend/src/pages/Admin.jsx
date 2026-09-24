@@ -367,7 +367,7 @@ const UsersTab = ({ API, authHeader, me }) => {
   const load = useCallback(async () => {
     setLoading(true);
     try {
-      const res = await axios.get(${API}/admin/users, { headers: authHeader() });
+      axios.get(\${API}/admin/users, { headers: authHeader() });
       setItems(res.data.items || []);
     } finally { 
       setLoading(false); 
