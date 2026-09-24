@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import {
@@ -153,7 +153,8 @@ const Promos = ({ API, authHeader }) => {
       setLoading(false);
     }
   };
-  useEffect(() => { load(); /* eslint-disable-next-line */ }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => { load(); }, []);
 
   const submit = async (e) => {
     e.preventDefault();
@@ -362,26 +363,21 @@ const UsersTab = ({ API, authHeader, me }) => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
-// ... (le reste de ton code avant)
-
   const load = useCallback(async () => {
     setLoading(true);
     try {
-    axios.get(API + '/admin/users', { headers: authHeader() });
+      const res = await axios.get(`${API}/admin/users`, { headers: authHeader() });
       setItems(res.data.items || []);
-    } finally { 
-      setLoading(false); 
+    } finally {
+      setLoading(false);
     }
-  }, []);
+  }, [API, authHeader]);
 
   useEffect(() => {
     load();
   }, [load]);
 
   const promote = async (id) => {
-    await axios.post(${API}/admin/users/${id}/promote, {}, { headers: authHeader() });
-    load();
-  };
     await axios.post(`${API}/admin/users/${id}/promote`, {}, { headers: authHeader() });
     load();
   };
