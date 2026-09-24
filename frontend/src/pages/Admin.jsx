@@ -361,7 +361,6 @@ const Orders = ({ API, authHeader }) => {
 const UsersTab = ({ API, authHeader, me }) => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
-import React, { useState, useEffect, useCallback } from 'react'; // Assure-toi que useCallback est importé
 
 // ... (le reste de ton code avant)
 
